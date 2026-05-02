@@ -137,7 +137,7 @@ function sendOrder() {
     message += `%0A📍 Ubicación:%0A${locationLink}`;
   }
 
-  const phone = "5219991234567"; // CAMBIA TU NÚMERO
+  const phone = "5219995131376"; // CAMBIA TU NÚMERO
 
   window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
 }
