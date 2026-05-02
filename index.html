@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedidos PRO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <h1>🍔 Pedidos</h1>
+
+  <!-- PRODUCTOS -->
+  <div id="menu"></div>
+
+  <!-- CARRITO -->
+  <div class="card">
+    <h2>🛒 Tu pedido</h2>
+    <ul id="cart"></ul>
+    <h3>Total: $<span id="total">0</span></h3>
+  </div>
+
+  <!-- CLIENTE -->
+  <div class="card">
+    <h2>👤 Datos</h2>
+
+    <input id="name" placeholder="Tu nombre">
+
+    <select id="delivery" onchange="updateDelivery()">
+      <option value="pickup">Recoger</option>
+      <option value="delivery">Domicilio (+$10)</option>
+    </select>
+
+    <input id="address" placeholder="Dirección">
+
+    <!-- BOTÓN UBICACIÓN -->
+    <button onclick="getLocation()">📍 Obtener ubicación</button>
+    <p id="locText">Sin ubicación</p>
+
+  </div>
+
+  <!-- ACCIONES -->
+  <div class="card">
+    <button onclick="sendOrder()">📲 Enviar pedido</button>
+    <button onclick="resetOrder()" class="danger">Reiniciar</button>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

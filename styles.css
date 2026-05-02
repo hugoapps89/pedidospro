@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: system-ui;
+  background: #0b1220;
+  color: white;
+}
+
+.app {
+  max-width: 500px;
+  margin: auto;
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* PRODUCTOS */
+.product {
+  background: #111827;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 12px;
+}
+
+.product h3 {
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.controls button {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  border: none;
+  background: #22c55e;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* TARJETAS */
+.card {
+  background: #111827;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+/* INPUTS */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* BOTONES */
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 10px;
+  font-weight: bold;
+  background: #22c55e;
+  color: white;
+  cursor: pointer;
+}
+
+.danger {
+  background: #ef4444;
+}
+
+/* LISTA */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #1f2937;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* UBICACIÓN */
+#locText {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #9ca3af;
+}
+
+/* RESPONSIVE */
+@media (min-width: 700px) {
+  .app {
+    max-width: 700px;
+  }
+}
